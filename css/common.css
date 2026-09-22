@@ -33,17 +33,17 @@
     /* 색상 */
 
     /* 메인 크림베이지 색상 */
-    --cream-0:#FFEDD5;
-    --cream-100:#FECF8D;
-    --cream-200:#FCBF69;
-    --cream-300:#FAB04A;
-    --cream-400:#F6A431;
-    --cream-500:#F0991E;
-    --cream-600:#EA8F11;
-    --cream-700:#E18708;
-    --cream-800:#D77E03;
-    --cream-900:#CC7700;
-    
+    --cream-0:#FAF5EB;
+    --cream-100:#F9E8C0;
+    --cream-200:#F6D996;
+    --cream-300:#F2CC72;
+    --cream-400:#EDC055;
+    --cream-500:#E6B43F;
+    --cream-600:#DCA82F;
+    --cream-700:#D09C24;
+    --cream-800:#C1901C;
+    --cream-900:#B38417;
+
     /* 그레이 컬러 */
     --gray-0:#FFFFFF;
     --gray-100:#FBFBFB;
@@ -51,15 +51,19 @@
     --gray-300:#E7E7E7;
     --gray-400:#D6D6D6;
     --gray-500:#BEBEBE;
-    --gray-600:#9F9F9F;
-    --gray-700:#797979;
-    --gray-800:#4B4B4B;
-    --gray-900:#1C1C1C;
+    --gray-600:#9E9E9E;
+    --gray-700:#777777;
+    --gray-800:#494949;
+    --gray-900:#1A1A1A;
 
-    /* 서브 컬러*/
-    --sub-color:#D8AE7E;
+    /* 서브컬러 */
+    --sub-color:#7895B2;
 
-    --red:#B31F1F;
+    --red:#A60000;
+
+
+
+
 }
 
 h1{font-size: var(--fs-h1);}
@@ -73,6 +77,7 @@ html{
     font-family: 'Pretendard',sans-serif;
     font-weight: var(--fw1);
     color:var(--gray-900);
+    scroll-behavior: smooth;
 }
 main{
     margin-top: 154px;
