@@ -25,7 +25,7 @@ let result = productArray.map(product => {
 
 saleUlTag.innerHTML = result
 
-function formatMoney(value){
+function formatPrice(value){
     return Number(value).toLocaleString('ko-KR');
 }
 
