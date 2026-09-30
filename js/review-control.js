@@ -1,6 +1,6 @@
 // 리뷰데이터들을 product.html파일의 리뷰 영역에 li태그의 형태로 넣어주는 파일
 
-if(reviewInfo.length===0){
+if (reviewInfo.length === 0) {
     // 리뷰가 없는 경우
     const productdetail2 = document.querySelector('#product-detail-2');
     productdetail2.innerHTML = `
@@ -8,19 +8,19 @@ if(reviewInfo.length===0){
         <div class='no-review'>상품에 대한 리뷰가 없습니다.</div>
     `;
 
-}else{
+} else {
     // 리뷰가 있는 경우
-const reviewUl = document.querySelector('.review');
+    const reviewUl = document.querySelector('.review');
 
-let  reviewHtmlTag = '';
-reviewInfo.forEach(function(item){
-    let reviewImgTag = '';
-    item.reviewImgs.forEach(function(img,index){
-        reviewImgTag += `<li><img src="./img/review/${img}" alt="리뷰이미지${index}"></li>`;
-    });
-    reviewHtmlTag += `<li>
+    let reviewHtmlTag = '';
+    reviewInfo.forEach(function (item) {
+        let reviewImgTag = '';
+        item.reviewImgs.forEach(function (img, index) {
+            reviewImgTag += `<li><img src="./img/review/${img}" alt="리뷰이미지${index}"></li>`;
+        });
+        reviewHtmlTag += `<li>
                             <div class="review-user">
-                                <span class="rev-name">${item.userName[0]+'*'+item.userName[2]}</span>
+                                <span class="rev-name">${item.userName[0] + '*' + item.userName[2]}</span>
                                 <span class="rev-date">${item.date}</span>
                             </div>
                             <div class="review-content">
@@ -47,8 +47,8 @@ reviewInfo.forEach(function(item){
                                 </div>
                             </div>
                         </li>`;
-});
+    });
 
-reviewUl.innerHTML = reviewHtmlTag;
+    reviewUl.innerHTML = reviewHtmlTag;
 
 }

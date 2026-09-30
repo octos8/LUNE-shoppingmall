@@ -1,9 +1,3 @@
-function formatPrice(value) {
-    const number = Number(value);
-    if (Number.isNaN(number)) return '0';
-    return number.toLocaleString('ko-KR');
-}
-
 const saleUlTag = document.querySelector('.sale');
 let result = productArray.map(product => {
     return `<li>
@@ -30,3 +24,9 @@ let result = productArray.map(product => {
 }).join('')
 
 saleUlTag.innerHTML = result
+
+function formatMoney(value){
+    return Number(value).toLocaleString('ko-KR');
+}
+
+
