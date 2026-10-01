@@ -1,10 +1,10 @@
-fetch('../header.html')
+fetch('./header.html')
     .then(respone => respone.text())
     .then(data => {
         document.querySelector('#header-wrap').innerHTML = data
     })
-    
-fetch('../footer.html')
+
+fetch('./footer.html')
     .then(respone => respone.text())
     .then(data => {
         document.querySelector('#footer-wrap').innerHTML = data
